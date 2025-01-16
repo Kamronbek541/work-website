@@ -1,0 +1,831 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+html {
+    scroll-behavior:smooth;
+}
+nav, .nav-links {
+    display: flex;
+    align-items: center;
+
+}
+.nav-links a{
+    text-decoration: none;
+    font-family: ao;  /*download the styles*/
+    font-size: 20px;
+    font-weight: lighter;
+    
+
+}
+nav {
+    justify-content: space-between;
+    height: 17vh;
+    padding: 0 20px;
+    width: 540px;
+
+}
+
+.nav-links {
+    list-style: none;
+    gap: 40px;
+}
+
+
+.background_img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+}
+
+
+/*Section */
+section {
+    padding-top: 0;
+    height: auto;
+    margin: 0 4%;
+    box-sizing: border-box;
+    min-height: fit-content;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+/* first page text  */
+.first_page p{
+    font-weight: 600;
+    font-size: 60px;
+    font-family: 123;
+
+}
+.first_page h1{
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 50px;
+    margin-bottom: 230px;
+}
+.button-container {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;  
+    color: white;            
+    padding: 15px 30px;
+    font-size: 22px;
+    font-weight: medium;
+    font-family: aeonik;
+    gap: 10px;             
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin-bottom: 100px;
+}
+
+.custom-button:hover {
+    background-color: #333;  
+}
+
+.arrow-icon {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    rotate: -45deg;
+}
+
+
+
+
+/* COURSES LGOGOS */
+.courses_logo{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 50px 0px;
+}
+.courses_logo img{
+    background-color: transparent;
+}
+
+
+
+
+
+
+/* CARDS WITH INFO */
+
+.feature-container {
+    display: flex;
+    gap: 40px;
+    width: 800px;
+}
+
+.feature-card {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+.feature-card svg{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+.feature-card p{
+    background-color: transparent;
+    font-size: 16px;
+    margin-top: 10px;
+    /* font-family: ; change font family */
+}
+.feature-card h3{
+    background-color: transparent;
+    font-size: 34px;
+}
+
+.feature-card.yellow-bg {
+    background-color: #DDF247; /* Yellow color */
+}
+
+.legend {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.legend-box {
+    width: 40px;
+    height: 10px;
+    border-radius: 4px;
+}
+
+.yellow {
+    background-color: #DDF247;
+}
+
+.gray {
+    background-color: #cccccc;
+}
+
+
+.card{
+    display: flex;
+    padding-top: 90px;
+    justify-content: space-between;
+}
+.info_card{
+    width: 400px;
+}
+.info_card h2{
+    font-size: 48px;
+}
+.info_card p{
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+
+
+
+/* CERTIFICATE + LANGUGAGES */
+
+.certificate_info{
+    background-color: white;
+    padding: 10px 4%;
+}
+.languages{
+    background-color: transparent;
+}
+.languages img{
+    background-color: transparent;
+}
+.languages_pic{
+    display: flex;
+    margin-top: 120px;
+    justify-content: space-between;
+    background-color: transparent;
+}
+.languages_text h1{
+    font-size: 48px;
+    margin-top: 30px;
+    background-color: transparent;
+}
+.languages_text p{
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+.languages_text{
+    margin-right: 30px;
+    background-color: transparent;
+}
+
+
+.logo_mini{
+    position: absolute;
+    background-color: transparent;
+    top: 2120px;
+}
+.logo_mini svg{
+    background-color: transparent;
+    left: 0;
+}
+
+
+
+
+/* CARD SECTION OTHER */
+.university{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.unity_together{
+    display: flex;
+    gap: 130px;
+    background-color: transparent;
+}
+.card-container {
+    position: relative;
+    width: 470px;
+    height: 540px;
+    background-color: transparent;
+    margin-right: 40px;
+    margin-top: 100px;
+}
+
+.shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 20px;
+    z-index: 0;
+    top: 20px;
+    left: 20px;
+}
+
+.card1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #DDF247;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.card1 h3 {
+    margin: 0;
+    font-size: 34px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: transparent;
+}
+
+.card1 h1 {
+    margin: 10px 0;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: rgba(0, 0, 0, 0.9);
+    background-color: transparent;
+}
+
+.line {
+    width: 100%;
+    height: 6px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    margin: 40px 0;
+    
+}
+
+.card1 p {
+    margin-top: 30px;
+    font-size: 34px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: transparent;
+}
+
+.certificate_text{
+    background-color: transparent;
+}
+.certificate_text h1{
+    font-size: 48px;
+    background-color: transparent;
+    background-color: transparent;
+    margin-bottom: 60px;
+    margin-top: 120px;
+}
+.unity{
+    background-color: transparent;
+}
+.unity img{
+    background-color: transparent;
+    margin-bottom: 30px;
+
+}
+.unity h2{
+    font-size: 34px;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+.unity p{
+    font-size: 16px;
+    background-color: transparent;
+}
+.stick{
+    position: absolute;
+    left: 310px;
+    top: 2510px;
+}
+
+/* PAYMENT LOGIC + COURSE PROCEED */
+.payment{
+    padding-top: 120px;
+    background-color: white;
+    padding-bottom: 50px;
+}
+.container2 {
+    text-align: center;
+    background-color: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container2 h1 {
+    margin-bottom: 30px;
+    font-size: 48px;
+    background-color: transparent;
+    
+}
+.container2 p{
+    background-color: transparent;
+    font-size: 22px;
+    margin-bottom: 80px;
+}
+
+.terminals {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 40px;
+    background-color: transparent;
+}
+
+.terminal {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    height: 400px;
+    cursor: pointer;
+    position: relative;
+}
+
+.terminal.active {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+.terminal.active h3{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+.terminal.active p{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+.terminal.active p1{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+
+.terminal h2 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+.terminal h3{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: transparent;
+    font-size: 24px;
+}
+.terminal p{
+    margin-bottom: 30px;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.terminal p1{
+    background-color: transparent;
+}
+
+.price {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.buy-button {
+    margin-top: 70px;
+    padding: 13px 20px;
+    background-color: #DDF247;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 18px;
+    width: 260px;
+    
+}
+
+.buy-button:hover {
+    background-color: #c4d32e;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 11;
+}
+.modal h3{
+    background-color: transparent;
+}
+.modal p{
+    background-color: transparent;
+}
+.modal span{
+    background-color: transparent;
+}
+.close {
+    background-color: transparent;
+    text-align: right;
+    cursor: pointer;
+}
+.terminal img{
+    background-color: transparent;
+    position: absolute;
+    left: 50px;
+    top: 130px;
+}
+
+
+
+
+
+
+
+
+/* FOOTER   */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px 6%; /* Left and right padding set to 5% */
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 320px;
+}
+
+.footer-content {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.footer-logo h3{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 34px;
+}
+
+.footer-logo img {
+    height: 40px; /* Adjust height as needed */
+    background-color: transparent;
+}
+
+.nav-links1 {
+    background-color: transparent;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links1 a {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 0.3s ease;
+}
+
+.nav-links1 a:hover {
+    background-color: transparent;
+    color: #DDF247;
+}
+
+.social-icons {
+    background-color: transparent;
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    max-width: 1200px;
+    padding-left: 48px;
+    background-color: transparent;
+}
+.social-icons a{
+
+    background-color: transparent;
+}
+.social-icons a img {
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+
+}
+
+
+
+.copyright {
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
+}
+.copyright a {
+    background-color: transparent;
+    color: #DDF247;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.divider {
+    background-color: transparent;
+    border-top: 1px solid #555;
+    margin: 15px 0;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* LIGHTNING BOARD */
+
+.box-area {
+    background-color: #DDF247;
+    border-radius: 20px;
+    padding: 40px 60px;
+    text-align: center;
+    box-shadow: 0 0 60px rgba(221, 242, 71, 0.4);
+    width: 978px;
+    height: 340px;
+}
+
+.box-area h1 {
+    font-size: 56px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    background-color: transparent;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.box-area p {
+    font-size: 34px;
+    color: black;
+    margin-bottom: 80px;
+    font-weight: 100;
+    background-color: transparent;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: transparent;
+
+}
+.button-group a{
+    text-decoration: none;
+}
+
+.button {
+    padding: 12px 24px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: transparent;
+}
+
+.button-try {
+    background-color: #b0c63b;
+    color: white;
+}
+
+.button-try:hover {
+    background-color: #97ae2d;
+}
+
+.button-start {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.button-start:hover {
+    background-color: #333;
+
+}
+
+.arrow-icon {
+    font-size: 18px;
+    color: white;
+}
+
+.lighting-effect {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    background: radial-gradient(circle, rgba(255, 255, 200, 0.1), transparent 70%);
+    top: 0;
+    left: 0;
+    filter: blur(40px);
+    z-index: -1;
+}
+
+.glowing{
+    position: absolute;
+    background-color: transparent;
+    top: 4550px;
+    left: 196px;
+}
+
+
+
+
+
+
+
+
+/* FAQ CONTAINER */
+
+.faq-container {
+    margin: 0 auto;
+    padding: 90px 5%;
+    padding-bottom: 330px;
+    background-color: white;
+}
+
+.faq-container h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    background-color: white;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    overflow: hidden;
+    margin-top: 50px;
+    background-color: white;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 34px;
+    font-weight: bold;
+    background-color: white;
+}
+.faq-answer p{
+    background-color: white;
+}
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    font-weight: 400;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    opacity: 1;
+
+}
+
+.faq-toggle {
+    width: 35px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-toggle.active {
+    background-color: #DDF247;
+    border-color: #DDF247;
+    color: black;
+}
