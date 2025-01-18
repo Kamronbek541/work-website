@@ -20,19 +20,21 @@
         } 
 
         nav {
-            flex-direction: row;
+            display: flex;
             justify-content: space-between;
             height: 17vh;
-            width: 540px;
+            width: 90%;
         }
     
         .nav-links {
-            flex-direction: row; /* Keep links inline for larger screens */
-            gap: 50px;
+            display: flex;
+            gap: 30px;
         }
-    
+        .nav-links a{
+            font-size: 18px;
+        }
         .img_ex {
-            max-width: 80px; /* Larger logo for desktop */
+            max-width: 80px; 
         }
 
 
@@ -226,12 +228,17 @@
 
 
 .logo_mini{
+    display: none;
     position: absolute;
     background-color: transparent;
     top: 2180px;
 
 }
+
+
+
 .logo_mini img{
+    display: none;
     background-color: transparent;
     left: 0;
     width: 120px;
