@@ -1,0 +1,615 @@
+/* PHONES */
+
+@media only screen and (max-width: 600px) {
+
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: #F4F4F4;
+            color: rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+
+
+            max-width: 600px; /* Limit the maximum width */
+        }
+        
+        
+        html {
+            scroll-behavior:smooth;
+        } 
+
+        nav {
+            flex-direction: row;
+            justify-content: space-between;
+            height: 17vh;
+            width: 540px;
+        }
+    
+        .nav-links {
+            flex-direction: row; /* Keep links inline for larger screens */
+            gap: 50px;
+        }
+    
+        .img_ex {
+            max-width: 80px; /* Larger logo for desktop */
+        }
+
+
+
+        /* first section */
+
+                
+        .background_img{
+            position: relative;
+            margin-right: 0;
+            width: 100%;
+            height: 690px;
+            padding: 0;
+        }
+
+        .big_logo1{
+            background-color: transparent;
+            position: absolute;
+            width: 100%;
+            
+        }
+
+        .code{
+            background-color: transparent;
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            width: 100%;
+            
+        }
+        .person_logo{   
+            background-color: transparent;
+            position: absolute;
+            right: 0;
+            bottom: -47;
+            width: 100%;
+
+        }
+        .yellow_big_logo{
+            width: 25%;
+            background-color: transparent;
+            position: absolute;
+            right: 0;
+            top: -210px;
+            bottom: 120px;
+            height: 190px;
+        }
+
+                
+        /* first page text  */
+        .desktop-nav_info{
+            width: 100%;
+            margin-left: 4%;
+        }
+
+
+        .first_page{
+            justify-content: space-between;
+            gap: 9.6%;
+            box-sizing: border-box;
+            max-width: 700px;
+            display: block;
+            margin-bottom: 46px;
+        }
+                        
+        .first_page p{
+            font-weight: 600;
+            font-size: 40px;
+            font-family: 123;
+
+        }
+        .first_page h1{
+            font-size: 18px;
+            font-weight: normal;
+            margin-top: 10px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+        .button-container {
+            display: inline-block;
+            text-decoration: none;
+            background-color: transparent;
+            margin-bottom: 50px;
+        }
+
+        .custom-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;  
+            color: white;            
+            padding: 12px 24px;
+            font-size: 22px;
+            font-weight: medium;
+            font-family: aeonik;
+            gap: 10px;             
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            margin-bottom: 100px;
+        }
+
+        .custom-button:hover {
+            background-color: #333;  
+        }
+
+        .arrow-icon {
+            width: 25px;
+            height: 25px;
+            background-color: transparent;
+            rotate: -45deg;
+        }
+
+
+
+
+        .courses_logo{
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            padding: 30px 0px;
+            width: 100%;
+        }
+        .courses_logo img{
+            background-color: transparent;
+            width: 20%;
+        }
+        
+
+
+
+        
+ .card {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px;
+}
+
+.info_card {
+    width: 100%; /* Full width for mobile */
+    text-align: center; /* Center-align text */
+    margin-bottom: 40px; /* Space between info_card and feature-container */
+}
+
+.info_card h2 {
+    font-size: 32px; /* Adjust for mobile */
+}
+
+.info_card p {
+    font-size: 18px; /* Smaller text for mobile */
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.feature-container {
+    display: flex;
+    flex-direction: column; /* Stack feature cards vertically */
+    gap: 20px; /* Space between cards */
+    width: 100%; /* Full width for mobile */
+    align-items: center; /* Center the cards */
+}
+
+.feature-card {
+    width: 60%; /* Adjust card width for mobile */
+    height: auto; /* Adjust height dynamically */
+    padding: 30px; /* Add padding */
+}
+
+.feature-card img {
+    margin: 20px auto; /* Center image */
+    display: block; /* Ensure it's a block element */
+}
+
+.legend {
+    justify-content: center; /* Center the legend items */
+    gap: 15px; /* Increase gap for better spacing */
+    margin-top: 30px;
+}
+
+.legend-item {
+    flex-direction: column; /* Stack the legend text and box */
+    align-items: center; /* Center-align the items */
+    gap: 5px; /* Reduce gap */
+}
+
+.legend-box {
+    width: 30px;
+    height: 8px; /* Adjust size for mobile */
+}
+
+
+
+.logo_mini{
+    position: absolute;
+    background-color: transparent;
+    top: 2180px;
+
+}
+.logo_mini img{
+    background-color: transparent;
+    left: 0;
+    width: 120px;
+}
+
+/* Mobile View Adjustments */
+    .languages_pic {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center horizontally */
+    }
+
+    .languages_text {
+        order: 1; /* Display this first */
+        text-align: center; /* Center-align text */
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .languages {
+        order: 2; /* Display this second */
+        margin-bottom: 20px;
+    }
+
+
+
+    .certificate_info {
+
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center horizontally */
+        padding: 20px; /* Add padding for mobile */
+    }
+
+    .languages_pic {
+        text-align: center; /* Center text content */
+        margin-bottom: 40px; /* Add spacing below */
+    }
+
+    .languages{
+        background-color: transparent;
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center horizontally */
+        text-align: center; /* Center text content */
+    }
+    .languages img{
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .languages_text h1 {
+        font-size: 28px; /* Adjust font size for mobile */
+        margin-bottom: 20px;
+    }
+
+    .languages_text p {
+        font-size: 16px; /* Adjust text size for mobile */
+        margin-bottom: 30px;
+    }
+
+    .custom-button {
+        margin: 0 auto; /* Center the button */
+        display: inline-block;
+    }
+
+    .university {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center content */
+        text-align: center;
+        margin-top: 0px;
+        width: 100%; /* Full width for mobile */
+    }
+
+    .certificate_text h1 {
+        font-size: 28px; /* Adjust font size */
+        margin-bottom: 40px;
+        margin-top: 0px;
+    }
+
+    .unity_together {
+        flex-direction: flex; /* Stack items vertically */
+        justify-content: space-between;
+        align-items: center; /* Center content */
+        gap: 20px; /* Adjust spacing between items */
+        margin-bottom: 40px;
+    }
+
+    .unity {
+        text-align: center; /* Center-align individual unity content */
+        width: 100%; /* Full width for mobile */
+    }
+
+    .unity h2 {
+        font-size: 24px; /* Adjust font size */
+        margin-bottom: 10px;
+    }
+
+    .unity p {
+        font-size: 14px; /* Adjust text size for mobile */
+    }
+
+    .card-container {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 320px;
+        height: 440px;
+        background-color: transparent;
+        margin-right: 40px;
+        margin-top: 20px;
+        text-align: left;
+    }
+    
+    .shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        border-radius: 20px;
+        z-index: 0;
+        top: 20px;
+        left: 20px;
+    }
+
+    .card1 {
+        padding: 20px;
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    .card1 p{
+        font-size: 24px;
+    }
+    .card1 h3 {
+        font-size: 22px; /* Adjust font size */
+    }
+
+    .card1 h1 {
+        font-size: 28px; /* Adjust font size */
+        margin: 10px 0;
+    }
+
+    .stick {
+        display: none; /* Hide the vertical line for mobile */
+    }
+    .button-container1 {
+        display: flex;
+        text-decoration: none;
+        background-color: transparent;
+        justify-content: center;
+    }
+
+
+
+
+
+
+    .payment{
+        padding-top: 40px;
+
+    }
+
+    .terminals {
+        display: flex;
+        flex-direction: row; /* Keep items in a single row */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        gap: 20px; /* Space between cards */
+        scroll-snap-type: x mandatory; /* Ensure smooth snapping */
+        padding-bottom: 20px; /* Add space below for better scrolling */
+    }
+
+    .terminal {
+        flex: 0 0 80%; /* Each card takes up 80% of the viewport width */
+        max-width: 300px; /* Limit the maximum width of each card */
+        height: auto; /* Allow dynamic height */
+        scroll-snap-align: center; /* Snap each card to the center when scrolling */
+    }
+
+    .container2 {
+        padding-left: 10px; /* Reduce padding for mobile */
+        padding-right: 10px;
+    }
+
+    .container2 h1 {
+        font-size: 32px; /* Adjust title font size for smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .container2 p {
+        font-size: 16px; /* Adjust subtitle font size */
+        margin-bottom: 40px;
+    }
+
+    .buy-button {
+        font-size: 16px; /* Adjust button font size */
+        padding: 10px 15px;
+        width: 200px; /* Adjust button width for smaller cards */
+    }
+
+
+        .glowing {
+            position: absolute;
+            top: 4950px; /* Adjust this to your desired vertical position */
+            left: 50%; /* Move the element's left edge to the middle of the parent container */
+            transform: translateX(-50%); 
+            position: absolute; /* Adjust positioning for mobile */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px; /* Add padding for better spacing */
+            width: 80%;
+        }
+    
+        .box-area {
+            width: 100%; /* Full width for mobile */
+            max-width: 400px; /* Limit the maximum width */
+            height: auto; /* Adjust height dynamically */
+            padding: 20px; /* Reduce padding for smaller screens */
+            text-align: center; /* Center-align content */
+            border-radius: 15px; /* Adjust border radius */
+            box-shadow: 0 0 40px rgba(221, 242, 71, 0.4);
+        }
+    
+        .box-area h1 {
+            font-size: 28px; /* Adjust font size for mobile */
+            line-height: 1.4; /* Improve readability */
+            margin-bottom: 20px;
+        }
+
+        
+        .box-area p {
+            font-size: 16px; /* Adjust text size for smaller screens */
+            margin-bottom: 20px;
+        }
+    
+        .button-group {
+            flex-direction: column; /* Stack buttons vertically */
+            gap: 10px; /* Add space between buttons */
+        }
+    
+        .button {
+            width: 100%; /* Make buttons full-width */
+            font-size: 18px; /* Adjust button font size */
+            padding: 12px; /* Adjust padding */
+        }
+    
+        .button-try {
+            background-color: #b0c63b;
+            color: white;
+            border-radius: 10px; /* Add rounded corners */
+        }
+    
+        .button-start {
+            background-color: black;
+            color: white;
+            border-radius: 10px; /* Add rounded corners */
+            gap: 5px; /* Reduce gap between text and arrow */
+        }
+    
+        .arrow-icon {
+            font-size: 16px; /* Adjust icon size */
+        }
+    
+        .lighting-effect {
+            height: 30vh; /* Reduce lighting effect height */
+            filter: blur(30px); /* Adjust blur for mobile */
+        }
+    
+
+
+
+        .faq-container {
+            padding: 60px 5%; /* Reduce padding for mobile */
+            padding-bottom: 150px; /* Adjust bottom padding */
+        }
+    
+        .faq-container h1 {
+            font-size: 24px; /* Adjust font size for smaller screens */
+            margin-bottom: 30px;
+        }
+    
+        .faq-item {
+            padding: 15px 0; /* Reduce padding for FAQ items */
+            margin-top: 30px; /* Adjust spacing between items */
+        }
+    
+        .faq-question {
+            display: flex;
+            align-items: flex-start; /* Align content to the start */
+            gap: 10px; /* Add spacing between the question and toggle */
+        }
+    
+        .faq-question h3 {
+            font-size: 20px; /* Adjust font size for mobile */
+        }
+    
+        .faq-answer {
+            font-size: 14px; /* Adjust font size for answers */
+            margin-top: 20px;
+            margin-left: 0; /* Remove left margin for better alignment */
+        }
+    
+        .faq-toggle {
+            width: 30px; /* Reduce size for the toggle */
+            height: 30px;
+            font-size: 16px;
+        }
+    
+        .faq-item.active .faq-answer {
+            max-height: 300px; /* Allow more space for answers on mobile */
+        }
+        
+
+        footer{
+            width: 100%;
+        }    
+
+
+
+            footer {
+                padding: 40px 5%; /* Adjust padding for smaller screens */
+                padding-top: 100px; /* Reduce top padding for mobile */
+                text-align: center;
+            }
+        
+            .footer-content {
+                flex-direction: column; /* Stack content vertically */
+                gap: 20px; /* Add spacing between items */
+                align-items: center; /* Center align items */
+                text-align: center; /* Center text inside items */
+            }
+        
+            .footer-logo {
+                flex-direction: column; /* Stack logo and text vertically */
+                gap: 10px; /* Add spacing between logo and title */
+            }
+        
+            .footer-logo h3 {
+                font-size: 24px; /* Adjust font size for smaller screens */
+            }
+        
+            .footer-logo img {
+                height: 30px; /* Adjust logo size */
+            }
+        
+            .nav-links1 {
+                margin-top: 30px;
+                flex-direction: column; /* Stack links vertically */
+                gap: 15px; /* Add spacing between links */
+            }
+        
+            .nav-links1 a {
+                font-size: 18px; /* Adjust font size */
+            }
+        
+            .social-icons {
+                justify-content: center; /* Center social icons */
+                padding-left: 0; /* Remove unnecessary padding */
+                gap: 10px; /* Reduce gap between icons */
+            }
+        
+            .social-icons a img {
+                width: 20px; /* Adjust icon size */
+                height: 20px;
+            }
+        
+            .copyright {
+                font-size: 16px; /* Adjust font size */
+                margin-top: 30px; /* Add spacing from social icons */
+            }
+        
+            .divider {
+                margin: 20px 0; /* Adjust margin for better spacing */
+            }
+    
+        
+    
+}
+
+/* TABLETS */

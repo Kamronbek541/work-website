@@ -5,12 +5,13 @@
     background-color: #F4F4F4;
     color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 
 html {
     scroll-behavior:smooth;
-}
+} 
 nav, .nav-links {
     display: flex;
     align-items: center;
@@ -18,7 +19,6 @@ nav, .nav-links {
 }
 .nav-links a{
     text-decoration: none;
-    font-family: ao;  /*download the styles*/
     font-size: 20px;
     font-weight: lighter;
     
@@ -38,13 +38,39 @@ nav {
 }
 
 
+
 .background_img{
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: transparent;
+    position: relative;
+    /* background-color: black; */
+    margin-right: 0;
+    width: 50%;
 }
 
+.big_logo1{
+    background-color: transparent;
+    position: absolute;
+
+}
+
+.code{
+    background-color: transparent;
+    position: absolute;
+    left: -220px;
+    bottom: 60px;
+    
+}
+.person_logo{   
+    background-color: transparent;
+    position: absolute;
+    bottom: -47px;
+
+}
+.yellow_big_logo{
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    bottom: -150px;
+}
 
 /*Section */
 section {
@@ -61,6 +87,20 @@ section {
 
 
 /* first page text  */
+.desktop-nav_info{
+    width: 40%;
+    margin-left: 4%;
+}
+
+
+.first_page{
+    justify-content: space-between;
+    gap: 9.6%;
+    box-sizing: border-box;
+    max-width: 100%;
+    display: flex;
+    margin-bottom: 46px;
+}
 .first_page p{
     font-weight: 600;
     font-size: 60px;
@@ -68,12 +108,18 @@ section {
 
 }
 .first_page h1{
-    font-size: 16px;
+    font-size: 22px;
+    line-height: 1.5;
     font-weight: normal;
     margin-top: 50px;
-    margin-bottom: 230px;
+    margin-bottom: 200px;
 }
 .button-container {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+}
+.button-container1 {
     display: inline-block;
     text-decoration: none;
     background-color: transparent;
@@ -114,7 +160,7 @@ section {
     display: flex;
     justify-content: space-around;
     background-color: white;
-    padding: 50px 0px;
+    padding: 90px 0px;
 }
 .courses_logo img{
     background-color: transparent;
@@ -142,15 +188,17 @@ section {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
-.feature-card svg{
+.feature-card img{
     background-color: white;
-    padding: 30px;
+    padding: 10px;
     border-radius: 10px;
     margin-bottom: 60px;
     margin-left: 20px;
     margin-top: 20px;
-
+    width: px;
 }
+
+
 .feature-card p{
     background-color: transparent;
     font-size: 16px;
@@ -253,9 +301,9 @@ section {
 .logo_mini{
     position: absolute;
     background-color: transparent;
-    top: 2120px;
+    top: 2180px;
 }
-.logo_mini svg{
+.logo_mini img{
     background-color: transparent;
     left: 0;
 }
@@ -278,6 +326,7 @@ section {
     gap: 130px;
     background-color: transparent;
 }
+
 .card-container {
     position: relative;
     width: 470px;
@@ -373,8 +422,13 @@ section {
 .stick{
     position: absolute;
     left: 310px;
-    top: 2510px;
+    top: 2610px;
 }
+
+
+
+
+
 
 /* PAYMENT LOGIC + COURSE PROCEED */
 .payment{
@@ -638,17 +692,7 @@ footer {
     margin: 15px 0;
 }
 
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        gap: 20px;
-    }
 
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
 /* LIGHTNING BOARD */
 
 .box-area {
@@ -673,7 +717,7 @@ footer {
 .box-area p {
     font-size: 34px;
     color: black;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     font-weight: 100;
     background-color: transparent;
 }
@@ -696,6 +740,7 @@ footer {
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
     background-color: transparent;
+    margin-top: 0px;
 }
 
 .button-try {
@@ -714,6 +759,7 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 8px;
+    
 }
 
 .button-start:hover {
@@ -740,8 +786,8 @@ footer {
 .glowing{
     position: absolute;
     background-color: transparent;
-    top: 4550px;
-    left: 196px;
+    top: 4590px;
+    left: 16%;
 }
 
 
@@ -829,3 +875,6 @@ footer {
     border-color: #DDF247;
     color: black;
 }
+
+
+
