@@ -41,6 +41,7 @@
 
                 
         .background_img{
+            display: none;
             position: relative;
             margin-right: 0;
             width: 100%;
@@ -434,12 +435,7 @@
 
 
         .glowing {
-            position: absolute;
-            top: 4950px; /* Adjust this to your desired vertical position */
-            left: 50%; /* Move the element's left edge to the middle of the parent container */
-            transform: translateX(-50%); 
-            position: absolute; /* Adjust positioning for mobile */
-            display: flex;
+            display: none;
             justify-content: center;
             align-items: center;
             padding: 20px; /* Add padding for better spacing */
@@ -462,7 +458,7 @@
             margin-bottom: 20px;
         }
 
-        
+
         .box-area p {
             font-size: 16px; /* Adjust text size for smaller screens */
             margin-bottom: 20px;
