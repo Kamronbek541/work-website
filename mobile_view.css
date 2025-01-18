@@ -28,7 +28,7 @@
     
         .nav-links {
             display: flex;
-            gap: 30px;
+            gap: 40px;
         }
         .nav-links a{
             font-size: 18px;
