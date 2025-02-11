@@ -1,3 +1,4 @@
+
 const legendItems = document.querySelectorAll('.legend-item');
 let activeLegend = document.getElementById('legend-1'); // Default active
 let activeCard = document.getElementById('card-1'); // Default active card
@@ -27,105 +28,76 @@ legendItems.forEach((item) => {
     });
 });
 
+// Package Selection Logic
 const terminals = document.querySelectorAll('.terminal');
-let activeTerminal = null;
 let selectedPrice = 0;
 
-// Terminal click logic
 terminals.forEach((terminal) => {
     terminal.addEventListener('click', () => {
-        if (activeTerminal) {
-            activeTerminal.classList.remove('active');
-        }
+        document.querySelectorAll('.terminal').forEach(t => t.classList.remove('active'));
         terminal.classList.add('active');
-        activeTerminal = terminal;
-        selectedPrice = terminal.getAttribute('data-price');
+        
+        // Convert selected price to number to avoid string issues
+        selectedPrice = Number(terminal.getAttribute('data-price'));
         document.getElementById('total-price').innerText = `$${selectedPrice}`;
     });
 });
 
-// Payment modal
+// Payment Modal Logic
 const buyButtons = document.querySelectorAll('.buy-button');
 const overlay = document.getElementById('overlay');
 const modal = document.getElementById('payment-modal');
 
 buyButtons.forEach((button) => {
-    button.addEventListener('click', () => {
+    button.addEventListener('click', async () => {
         if (selectedPrice > 0) {
-            overlay.classList.add('active');
+            try {
+                // Request backend to create a payment session
+                const response = await fetch('/create-payment-intent', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ amount: selectedPrice })
+                });
+
+                const result = await response.json();
+                
+                if (result.success) {
+                    // ✅ Redirect user to AmoPay checkout page
+                    window.location.href = result.redirectUrl;
+                } else {
+                    alert(`❌ Payment Error: ${result.message}`);
+                }
+            } catch (error) {
+                console.error("❌ Payment processing error:", error);
+                alert("⚠️ An error occurred. Please try again.");
+            }
         } else {
-            alert('Please select a package!');
+            alert("⚠️ Please select a package before proceeding.");
         }
     });
 });
 
+// ✅ Function to Close Modal
 function closeModal() {
     overlay.classList.remove('active');
 }
 
-// Close modal when clicking outside the modal
+// ✅ Close modal when clicking outside
 overlay.addEventListener('click', (event) => {
     if (event.target === overlay) {
         closeModal();
     }
 });
 
-// Stripe Payment Integration
-const stripe = Stripe('your-publishable-key-here'); // Replace with your Stripe publishable key
-const elements = stripe.elements();
-const cardElement = elements.create('card');
-cardElement.mount('#card-element');
-
-const submitButton = document.getElementById('submit-button');
-submitButton.addEventListener('click', async () => {
-    try {
-        // Replace localhost with your Heroku backend URL
-        const response = await fetch(
-            'https://scriptscholars-987e20a57756.herokuapp.com/create-payment-intent',
-            {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ amount: selectedPrice }),
-            }
-        );
-
-        if (!response.ok) {
-            throw new Error('Failed to create payment intent');
-        }
-
-        const { clientSecret } = await response.json();
-
-        const { paymentIntent, error } = await stripe.confirmCardPayment(clientSecret, {
-            payment_method: {
-                card: cardElement,
-                billing_details: {
-                    name: 'User Name', // Replace with actual user name if available
-                },
-            },
-        });
-
-        if (error) {
-            alert(`Payment failed: ${error.message}`);
-        } else if (paymentIntent && paymentIntent.status === 'succeeded') {
-            alert('Payment successful!');
-            closeModal();
-        }
-    } catch (error) {
-        console.error('Error during payment:', error);
-        alert('Something went wrong. Please try again.');
-    }
-});
-
-// FAQS Section
+// ✅ FAQs Section Logic
 const faqItems = document.querySelectorAll('.faq-item');
 
 faqItems.forEach((item) => {
     const question = item.querySelector('.faq-question');
     const toggleButton = item.querySelector('.faq-toggle');
-    const answer = item.querySelector('.faq-answer');
 
     question.addEventListener('click', () => {
-        // Close any open FAQ
+        // Close other FAQs
         faqItems.forEach((faq) => {
             if (faq !== item) {
                 faq.classList.remove('active');
@@ -134,7 +106,7 @@ faqItems.forEach((item) => {
             }
         });
 
-        // Toggle the current FAQ
+        // Toggle current FAQ
         if (item.classList.contains('active')) {
             item.classList.remove('active');
             toggleButton.innerText = '+';
