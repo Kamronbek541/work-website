@@ -56,7 +56,7 @@ buyButtons.forEach((button) => {
 
 // !1!!
                 // const response = await fetch('/create-payment-intent', {
-                const response = await fetch('https://scriptscholars-987e20a57756.herokuapp.com/create-payment-intent', {
+                const response = await fetch(`${window.location.origin}/create-payment-intent`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ amount: selectedPrice })
