@@ -53,7 +53,10 @@ buyButtons.forEach((button) => {
         if (selectedPrice > 0) {
             try {
                 // Request backend to create a payment session
-                const response = await fetch('/create-payment-intent', {
+
+// !1!!
+                // const response = await fetch('/create-payment-intent', {
+                const response = await fetch('https://git.heroku.com/scriptscholars.git/create-payment-intent', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ amount: selectedPrice })
