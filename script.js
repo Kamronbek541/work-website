@@ -30,7 +30,7 @@ legendItems.forEach((item) => {
 
 // Package Selection Logic
 const terminals = document.querySelectorAll('.terminal');
-let selectedPrice = 0;
+let selectedPrice = 2000;
 
 terminals.forEach((terminal) => {
     terminal.addEventListener('click', () => {
