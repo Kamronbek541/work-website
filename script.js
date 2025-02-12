@@ -27,7 +27,7 @@ legendItems.forEach((item) => {
     });
 });
 
-// ✅ Package Selection Logic
+// Package Selection Logic
 const terminals = document.querySelectorAll('.terminal');
 let selectedPrice = 1000; // Default withdraw amount is now $1000
 
@@ -43,7 +43,7 @@ terminals.forEach((terminal) => {
     });
 });
 
-// ✅ Payment Modal Logic
+// Payment Modal Logic
 const buyButtons = document.querySelectorAll('.buy-button');
 const overlay = document.getElementById('overlay');
 const modal = document.getElementById('payment-modal');
@@ -70,7 +70,7 @@ buyButtons.forEach((button) => {
                 
                 if (result.success) {
                     console.log("✅ Payment intent created. Redirecting...");
-                    // ✅ Redirect user to AmoPay checkout page
+                    // Redirect user to AmoPay checkout page
                     window.location.href = result.redirectUrl;
                 } else {
                     console.error("❌ Payment Error:", result.message);
@@ -86,19 +86,19 @@ buyButtons.forEach((button) => {
     });
 });
 
-// ✅ Function to Close Modal
+// Function to Close Modal
 function closeModal() {
     overlay.classList.remove('active');
 }
 
-// ✅ Close modal when clicking outside
+// Close modal when clicking outside
 overlay.addEventListener('click', (event) => {
     if (event.target === overlay) {
         closeModal();
     }
 });
 
-// ✅ FAQs Section Logic
+// FAQs Section Logic
 const faqItems = document.querySelectorAll('.faq-item');
 
 faqItems.forEach((item) => {
