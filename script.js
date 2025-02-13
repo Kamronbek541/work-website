@@ -55,12 +55,14 @@ buyButtons.forEach((button) => {
                 console.log("🟢 Sending request to server...");
                 
                 // Request backend to create a payment session
-                const response = await fetch(`${window.location.origin}/create-payment-intent`, {
+                const API_URL = "https://scriptscholars-987e20a57756.herokuapp.com";  // ✅ Replace with your backend URL
+
+                const response = await fetch(`${API_URL}/create-payment-intent`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ amount: selectedPrice })
                 });
-
+                
                 if (!response.ok) {
                     throw new Error(`Server responded with status ${response.status}`);
                 }
