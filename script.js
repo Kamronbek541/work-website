@@ -29,7 +29,7 @@ legendItems.forEach((item) => {
 
 // Package Selection Logic
 const terminals = document.querySelectorAll('.terminal');
-let selectedPrice = 1000; // Default withdraw amount is now $1000
+// let selectedPrice = 1000; // Default withdraw amount is now $1000
 
 terminals.forEach((terminal) => {
     terminal.addEventListener('click', () => {
@@ -55,7 +55,7 @@ buyButtons.forEach((button) => {
                 console.log("🟢 Sending request to server...");
                 
                 // Request backend to create a payment session
-                const API_URL = "https://scriptscholars-987e20a57756.herokuapp.com";  // ✅ Replace with your backend URL
+                const API_URL = "http://localhost:3000";  // ✅ Replace with your backend URL
 
                 const response = await fetch(`${API_URL}/create-payment-intent`, {
                     method: 'POST',
@@ -68,7 +68,6 @@ buyButtons.forEach((button) => {
                 }
 
                 const result = await response.json();
-                console.log("🔵 Server response:", result);
                 
                 if (result.success) {
                     console.log("✅ Payment intent created. Redirecting...");
