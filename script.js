@@ -55,7 +55,7 @@ buyButtons.forEach((button) => {
                 console.log("🟢 Sending request to server...");
                 
                 // Request backend to create a payment session
-                const API_URL = "http://localhost:3000";  // ✅ Replace with your backend URL
+                const API_URL = "https://scriptscholars-66e2b211ae7d.herokuapp.com";  // ✅ Replace with your backend URL
 
                 const response = await fetch(`${API_URL}/create-payment-intent`, {
                     method: 'POST',
