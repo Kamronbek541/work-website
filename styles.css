@@ -457,15 +457,17 @@ section {
 }
 
 .terminals {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    margin-top: 40px;
+    display: flex;       /* Aligns children (terminal divs) horizontally */
+    flex-wrap: nowrap;   /* Prevents wrapping of items */
+    overflow-x: auto;    /* Enables horizontal scrolling */
+    max-height: 100vh;   /* Limits maximum height to the viewport's height */
+    padding: 10px;
+    box-sizing: border-box;
     background-color: transparent;
 }
 
 .terminal {
-    flex: 1;
+    flex: 0 0 auto;      /* Prevents terminals from growing or shrinking */
     padding: 20px;
     background-color: #f0f0f0;
     border-radius: 10px;
@@ -474,6 +476,9 @@ section {
     height: 400px;
     cursor: pointer;
     position: relative;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-right: 40px;
 }
 
 .terminal.active {
