@@ -466,6 +466,65 @@ section {
     background-color: transparent;
 }
 
+/* --- New/Modified Styles for Editable Price --- */
+
+.price-editable-area {
+    font-size: 48px;    /* Same as original .price */
+    font-weight: bold; /* Same as original .price */
+    margin: 20px 0;     /* Add some vertical spacing */
+    /* Ensure it inherits color correctly, especially in active state */
+    color: inherit;
+        background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.price-value {
+    display: inline-block; /* Allows for minor adjustments if needed */
+    min-width: 50px; /* Give it a minimum width so it doesn't collapse if empty */
+    padding: 0 5px; /* Add slight horizontal padding */
+    border-radius: 4px; /* Slightly rounded corners */
+    outline: none; /* Remove browser's default focus outline */
+    cursor: text; /* Change cursor to text input cursor */
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    vertical-align: baseline; /* Align with dollar sign */
+}
+
+/* Style when the price span is being edited (focused) */
+.price-value:focus {
+    background-color: rgba(255, 255, 255, 0.05); /* Subtle background */
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.25); /* Subtle focus ring */
+}
+
+/* Style for the price when it's below the minimum */
+.price-value.invalid-price {
+    color: red;
+    /* Optional: add a more prominent visual cue */
+    /* text-decoration: underline wavy red; */
+}
+
+/* Style for the warning message */
+.min-amount-warning {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px; /* Space above the message */
+    margin-bottom: 10px; /* Space below the message */
+    font-weight: bold;
+    height: 20px; /* Reserve space even when hidden to prevent layout shifts */
+    visibility: hidden; /* Use visibility instead of display:none initially */
+    opacity: 0; /* Start faded out */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Style to show the warning message */
+.min-amount-warning.visible {
+   visibility: visible;
+   opacity: 1;
+}
+
+
+    
+
+
 .terminal {
     flex: 0 0 auto;      /* Prevents terminals from growing or shrinking */
     padding: 20px;
@@ -494,6 +553,8 @@ section {
     background-color: transparent;
     color: rgb(255, 255, 255);
 }
+
+
 .terminal.active p1{
     background-color: transparent;
     color: rgb(255, 255, 255);
@@ -541,6 +602,10 @@ section {
 .buy-button:hover {
     background-color: #c4d32e;
 }
+
+
+
+
 
 .overlay {
     display: none;
