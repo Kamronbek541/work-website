@@ -146,8 +146,6 @@ allPriceSpans.forEach(span => {
 
 
 
-
-
 // Package Selection Logic
 const terminals = document.querySelectorAll('.terminal');
 
